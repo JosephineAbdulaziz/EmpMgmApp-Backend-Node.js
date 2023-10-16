@@ -1,0 +1,22 @@
+{
+  "name": "101390844_comp3123_assignment1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephineAbdulaziz/101390844_comp3123_assignment1.git"
+  },
+  "keywords": [],
+  "author": "Josefin Abdulaziz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.2"
+  }
+}
