@@ -37,7 +37,6 @@ employeeRouter.get("/:id",async(req,res)=>{
 
 });
 
-// //update an employee
 // Update an employee
 employeeRouter.put("/:id", async (req, res) => {
     try {
@@ -47,7 +46,7 @@ employeeRouter.put("/:id", async (req, res) => {
         if (!employee) {
             return res.status(404).send({ message: "Employee not found" });
         }
-
+        
         await empModel.updateOne({ _id: req.params.id }, fields);
         const updatedEmployee = await empModel.findById(req.params.id);
 
@@ -58,7 +57,7 @@ employeeRouter.put("/:id", async (req, res) => {
 });
 
 
-// //delete an employee
+//delete an employee
 employeeRouter.delete("/:id", async(req,res)=>{
     try{
         const employee = await empModel.deleteOne({_id : req.params.id})
